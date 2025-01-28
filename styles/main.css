@@ -1,0 +1,73 @@
+body {
+  background-color: #fff;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #007bff;
+}
+.navbar-brand:hover {
+  color: #0062cc;
+}
+
+#main-content {
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.content-section {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card-img-top {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card.profile-card .card-img-top {
+  height: auto !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+  max-height: 100;
+}
+
+.custom-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.custom-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn-primary:hover {
+  background-color: #0062cc;
+  border-color: #0062cc;
+}
+
+@media screen and (max-width: 768px) {
+  .content-section {
+    padding: 1rem;
+  }
+  .card-img-top {
+    height: 150px;
+  }
+}/*# sourceMappingURL=main.css.map */

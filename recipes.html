@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - Kitchen Diaries</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Kitchen Diaries</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="recipes.html">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <h1>My Recipes</h1>
+        <p class="lead mb-4">A collection of my favorite creations, from sweet treats to savory delights.</p>
+
+        <div class="table-responsive mb-4">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Recipe</th>
+                        <th>Prep Time</th>
+                        <th>Cook Time</th>
+                        <th>Difficulty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Brown Butter Chocolate Cookies</td>
+                        <td>20 mins</td>
+                        <td>12 mins</td>
+                        <td>Easy</td>
+                    </tr>
+                    <tr>
+                        <td>Coconut Sweet Bread</td>
+                        <td>2 hours</td>
+                        <td>30 mins</td>
+                        <td>Medium</td>
+                    </tr>
+                    <tr>
+                        <td>Carrot Cake</td>
+                        <td>30 mins</td>
+                        <td>60 mins</td>
+                        <td>Medium</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/cookies.jpg" class="card-img-top" alt="Brown Butter Cookies" data-toggle="modal" data-target="#cookieModal" style="cursor: pointer;">
+                    <div class="card-body">
+                        <h5 class="card-title">Brown Butter Chocolate Cookies</h5>
+                        <p class="card-text">Crispy edges, chewy centers, elevated with nutty brown butter.</p>
+                        <div class="mt-3">
+                            <span class="badge badge-light mr-2">Dessert</span>
+                            <span class="badge badge-light">Cookies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/carrotcake.jpg" class="card-img-top" alt="Carrot Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Carrot Cake</h5>
+                        <p class="card-text">A taste of the holidays and SO good.</p>
+                        <div class="mt-3">
+                            <span class="badge badge-light mr-2">Dessert</span>
+                            <span class="badge badge-light">Cake</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/breadrolls.jpg" class="card-img-top" alt="Coconut Sweet Bread">
+                    <div class="card-body">
+                        <h5 class="card-title">Coconut Sweet Bread Rolls</h5>
+                        <p class="card-text">Soft, fluffy and perfect with your morning tea or coffee.</p>
+                        <div class="mt-3">
+                            <span class="badge badge-light mr-2">Breakfast</span>
+                            <span class="badge badge-light">Bread</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Cookie Recipe -->
+    <div class="modal fade" id="cookieModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Brown Butter Chocolate Cookies</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Ingredients:</h6>
+                    <ul>
+                        <li>2 sticks unsalted butter</li>
+                        <li>2 1/4 cups all-purpose flour</li>
+                        <li>1 teaspoon baking soda</li>
+                        <li>1 teaspoon salt</li>
+                        <li>1 cup brown sugar</li>
+                        <li>1/2 cup granulated sugar</li>
+                        <li>2 large eggs</li>
+                        <li>2 teaspoons vanilla extract</li>
+                        <li>2 cups semi-sweet chocolate chips</li>
+                    </ul>
+                    <h6>Instructions:</h6>
+                    <ol>
+                        <li>Brown the butter in a saucepan until golden and fragrant. Let cool.</li>
+                        <li>Mix dry ingredients in a bowl.</li>
+                        <li>Cream cooled brown butter with sugars.</li>
+                        <li>Add eggs and vanilla, mix well.</li>
+                        <li>Gradually add dry ingredients.</li>
+                        <li>Fold in chocolate chips.</li>
+                        <li>Bake at 350°F for 12 minutes.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
